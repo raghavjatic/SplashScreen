@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <!-- Spacer -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start">
+
+        <!-- OTP Instruction Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the 4-digit code sent to"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <!-- Email Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="abcd***@gmail.com"
+            android:textSize="16sp"
+            android:textColor="#666666" />
+
+        <!-- Change Email Button (Perfect Left Alignment) -->
+        <Button
+            android:id="@+id/btnChangeEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change your e-mail?"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="start"
+            android:textAllCaps="false"
+            android:padding="0dp"/>
+
+
+    </LinearLayout>
+
+    <!-- OTP Input Fields -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/otp1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/search_background"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp"
+            android:layout_margin="4dp" />
+
+        <EditText
+            android:id="@+id/otp2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/search_background"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp"
+            android:layout_margin="4dp" />
+
+        <EditText
+            android:id="@+id/otp3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/search_background"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp"
+            android:layout_margin="4dp" />
+
+        <EditText
+            android:id="@+id/otp4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/search_background"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp"
+            android:layout_margin="4dp" />
+    </LinearLayout>
+
+    <!-- Spacer -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <!-- Resend Code Button (Left-Aligned & Custom Background) -->
+    <Button
+        android:id="@+id/btnResendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend code via another e-mail"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:layout_gravity="start"
+        android:backgroundTint="#DDDDDD"/>
+
+
+    <!-- Spacer -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <!-- Verify OTP Button (Smaller Size) -->
+    <Button
+        android:id="@+id/btnVerifyOTP"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/green"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Spacer -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="34dp" />
+
+    <!-- Car Image (Centered) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/car_loginpage"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="20dp">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="10dp"/>
+<!--            android:src=""-->
+<!--            android:background=""-->
+
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"/>
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/profileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="johndoe@example.com"
+            android:textSize="14sp"
+            android:textColor="@color/dark_gray"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Edit Profile Button -->
+        <Button
+            android:id="@+id/editProfileBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Vehicle Details -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Details"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/vehicleInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Car - ABC 1234"
+            android:textSize="14sp"
+            android:textColor="@color/dark_gray"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Saved Parking Spots -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saved Parking Spots"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/savedParking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No saved spots"
+            android:textSize="14sp"
+            android:textColor="@color/dark_gray"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Transaction History -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaction History"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/transactionHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View past payments"
+            android:textSize="14sp"
+            android:textColor="@color/dark_gray"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Booking Management -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Bookings"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/myBookings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upcoming and past bookings"
+            android:textSize="14sp"
+            android:textColor="@color/dark_gray"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Host Dashboard -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Host Dashboard"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/hostDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage parking spaces"
+            android:textSize="14sp"
+            android:textColor="@color/dark_gray"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Settings & Security -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings and Security"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/changePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:textSize="14sp"
+            android:textColor="@color/dark_gray"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/paymentMethods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Methods"
+            android:textSize="14sp"
+            android:textColor="@color/dark_gray"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/notificationPreferences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notification Preferences"
+            android:textSize="14sp"
+            android:textColor="@color/dark_gray"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
